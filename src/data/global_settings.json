@@ -1,8 +1,8 @@
 {
-  "title": "blackspike astro landing page",
-  "description": "A free Astro landing theme made with Tailwind",
+  "title": "Public SOS – Offline-First CMS for Critical Event Response",
+  "description": "Public SOS brings together an offline-ready emergency communication system with smart incident management tools—empowering your teams to deploy faster, coordinate better, and bounce back stronger from any critical event, even without an internet connection.",
   "social_image": "/1200x630.jpg",
-  "base_url": "https://astro-theme.blackspike.com",
+  "base_url": "https://publicsos.org",
   "demo": {
     "title": "Need design?",
     "content": "<strong>Get a guided tour through our services</strong>, and find out how you and your team can change the way you work, forever.",
