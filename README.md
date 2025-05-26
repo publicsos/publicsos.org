@@ -1,83 +1,111 @@
-# blackspike astro landing page
+# Public SOS
 
-[<img src="public/theme-preview/github-preview.jpg" alt="screens showing theme parts on iPads" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/github-preview.jpg)
 
-## A free, modern, [Astro](https://astro.build/) landing page theme made with [Tailwind](https://tailwindcss.com/) to help kick start your next Astro project
 
-We built this page as the first version of our own website, [blackspike.com](https://www.blackspike.com), but switched to a different design later.
 
-Rather than let it gather dust, we decided to modernise it, try out some fresh new CSS features and give it back to the Astro community.
+Here ya go, mate — a 🔥 professional and Gen Z-dev-friendly `README.md` for your **Public SOS** project repo, following best practices (badges, sections, install instructions, multilingual-ready hints, and tech stack).
 
-You can read more about how we built it and the cool new tech we used [on our blog post](https://astro.build/themes/details/blackspike-astro-landing-page/).
+---
 
-Now available as an official Astro theme! [Download it from the Astro themes page](https://astro.build/themes/details/blackspike-astro-landing-page/)
+````markdown
+# 🚨 Public SOS
 
-## Live demo https://astro-theme.blackspike.com
+**Public SOS** is the world’s first **offline-first CMS** for deploying critical websites and real-time emergency content — even when internet access is limited or unavailable. Built using a stack of **Laravel, PHP, Python, Golang**, and modern front-end tech (Astro + Tailwind), it’s designed for field ops, disaster zones, remote comms, and resilient digital delivery.
 
-We hope you find it useful!
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
+![Offline Ready](https://img.shields.io/badge/Offline-Enabled-blue)
+![Made with Laravel](https://img.shields.io/badge/Made%20With-Laravel-red)
+![Dev Status](https://img.shields.io/badge/status-alpha-orange)
 
-## License
+---
 
-Theme and 3D images are licensed under a [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/).
+## 🌍 What It Does
 
-Created by blackspike [blackspike design](https://www.blackspike.com) – a web design & development team specialising in Astro, Vue, Nuxt & Wordpress websites
+> When your internet dies, **Public SOS** keeps your info alive.
 
-## Astro 5 Features
+- 🔌 Offline-ready CMS deployable via USB, SD card, or mesh network
+- 🔐 Secure emergency alert system (Laravel + Go + Python workflows)
+- 🌐 Multilingual support: 🇬🇧 English, 🇷🇺 Russian, 🇨🇳 Mandarin (coming soon)
+- 📦 Microservice architecture using Laravel (admin), Go (event daemon), and Python (AI/routing)
+- ⚡ Fast, modern front-end using Astro + Tailwind
 
-- [Image component](https://docs.astro.build/en/guides/images/#display-optimized-images-with-the-image--component) for optimised AVIF images
-- All-[JSX](https://docs.astro.build/en/reference/astro-syntax/) native astro components
-- SVGs imported as [SVG components](https://docs.astro.build/en/guides/images/#svg-components)
-- JSON-powered content (easy to edit UI text or hook up a CMS!)
-- Experimental [Fonts API](https://docs.astro.build/en/reference/experimental-flags/fonts/)
+---
 
-## CSS & HTML Features
+## ⚙️ Tech Stack
 
-- [Tailwind 4](https://tailwindcss.com/blog/tailwindcss-v4)
-- HTML modal dialog
-- JS-free scroll-linked animations
-- JS-free exclusive accordions with details/summary (animated!)
-- Container queries
-- Linear easing for bouncing / springing
-- Text wrap pretty / balance
+| Layer        | Tech                            |
+| ------------ | ------------------------------- |
+| Backend API  | Laravel (PHP 8.x), Python (FastAPI), Go (core ops daemon) |
+| Frontend     | Astro, TailwindCSS              |
+| Database     | PostgreSQL / SQLite (offline)   |
+| Storage      | IPFS (planned), local disk      |
+| Messaging    | MQTT / Redis PubSub             |
+| Deploy Tool  | Golang CLI / Laravel Artisan    |
 
-## JS Features
+---
 
-- [swiper.js](https://swiperjs.com/) carousel
+## 🚀 Getting Started
 
-## Previews
+### 1. Clone the Repo
 
-[<img src="public/theme-preview/blackspike-theme-1.jpg" alt="screenshot of dark theme landing page on desktop and on ipad browsers" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-1.jpg)
+```bash
+git clone https://github.com/publicsos/public-sos.git
+cd public-sos
+````
 
-[<img src="public/theme-preview/blackspike-theme-2.jpg" alt="screenshot of dark theme carousel slides with 3D backgrounds" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-2.jpg)
+### 2. Install Backend (Laravel)
 
-[<img src="public/theme-preview/blackspike-theme-4.jpg" alt="screens showing theme parts" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-4.jpg)
+```bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+```
 
-[<img src="public/theme-preview/blackspike-theme-5.jpg" alt="dark theme pricing section on laptop and iPhone browsers" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-5.jpg)
+### 3. Run Frontend (Astro + Tailwind)
 
-[<img src="public/theme-preview/blackspike-theme-full.webp" alt="full page preview" style="max-width: 100%; height: auto; width: 100%;" width="1600">](public/theme-preview/blackspike-theme-full.webp)
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## Credits
+### 4. Start Event Daemon (Go)
 
-- Fake logos by [uicontent.co](https://uicontent.co/svg-dummy-logo/)
-- Quote avatar person by [thispersondoesnotexist.com](https://thispersondoesnotexist.com/)
-- Misc icons and logo from [icones.js.org](https://icones.js.org/) by [@antfu](https://github.com/antfu)
-- Carousel powered by [swiperjs.com](https://swiperjs.com/)
-- Inter font by [rsms.me](https://rsms.me/inter/)
+```bash
+cd go-daemon
+go build -o sosd main.go
+./sosd
+```
 
-## Tags
+### 5. Python AI Module (Optional)
 
-#tailwind #tailwind4 #astro #landingPage #css #html #swiper #dark #theme
+```bash
+cd ai-engine
+pip install -r requirements.txt
+python3 main.py
+```
 
-## Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 📁 Project Structure
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```
+/public-sos
+├── backend        # Laravel core
+├── frontend       # Astro + Tailwind
+├── go-daemon      # Critical event microservice
+├── ai-engine      # Optional AI/NLP tools
+├── docs           # Arch + flow diagrams
+└── .env.example   # Example config
+```
 
+---
+
+## 🧠 Use Cases
+
+* 🛰️ Emergency response websites (offline deploy via USB)
+* 🚒 Fire, police, civil defence digital bulletin boards
+* 🌪️ Crisis communication in disaster-affected zones
+* 🏥 Hospitals & health agencies (air-gapped environments)
+* 🏕️ NGOs operating in rural or disconnected areas
